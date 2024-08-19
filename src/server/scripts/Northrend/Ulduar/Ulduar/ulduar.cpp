@@ -19,7 +19,6 @@
 #include "AreaTriggerScript.h"
 #include "CombatAI.h"
 #include "CreatureScript.h"
-#include "GameObjectScript.h"
 #include "PassiveAI.h"
 #include "Player.h"
 #include "ScriptedCreature.h"
@@ -547,7 +546,7 @@ struct npc_salvaged_siege_engine : public VehicleAI
             {
                 if (Unit* turret = vehicle->GetPassenger(7))
                 {
-                    if (Vehicle* turretVehicle = me->GetVehicleKit())
+                    if (Vehicle* turretVehicle = turret->GetVehicleKit())
                     {
                         if (!turretVehicle->IsVehicleInUse())
                         {
