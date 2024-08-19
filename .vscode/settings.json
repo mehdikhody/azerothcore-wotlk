@@ -127,7 +127,9 @@
     "RegisterInstanceEvent",
     "RegisterCreatureEvent",
     "RegisterMapEvent",
-    "C_Functions"
+    "C_Functions",
+    "NAME",
+    "SPELLS"
   ],
   "Lua.runtime.version": "Lua 5.1",
   "Lua.runtime.builtin": {
